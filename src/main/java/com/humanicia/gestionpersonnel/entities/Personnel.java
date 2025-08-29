@@ -37,12 +37,11 @@ public class Personnel {
     private BigDecimal salaire;
 
     @ManyToOne
-    @JoinColumn(name = "id_service")
-    @JsonbTransient
+    @JoinColumn(name = "id_service", referencedColumnName = "id_service")
     private Service service;
 
     @ManyToOne
-    @JoinColumn(name = "id_poste")
+    @JoinColumn(name = "id_poste", referencedColumnName = "id_poste")
     private Poste poste;
 
     @OneToMany(mappedBy = "personnel", cascade = CascadeType.ALL, orphanRemoval = true)

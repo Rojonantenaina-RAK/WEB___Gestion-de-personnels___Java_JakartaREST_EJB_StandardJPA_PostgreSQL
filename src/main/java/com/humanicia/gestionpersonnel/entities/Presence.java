@@ -14,9 +14,8 @@ public class Presence {
     @Column(name = "id_presence")
     private Integer idPresence;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "matricule", nullable = false)
-    @JsonbTransient
     private Personnel personnel;
 
     @Column(name = "date_presence", nullable = false)
@@ -32,6 +31,7 @@ public class Presence {
     private String statut;
 
     public Integer getIdPresence() { return idPresence; }
+    @JsonbTransient
     public Personnel getPersonnel() { return personnel; }
     public void setPersonnel(Personnel personnel) { this.personnel = personnel; }
     public LocalDate getDatePresence() { return datePresence; }

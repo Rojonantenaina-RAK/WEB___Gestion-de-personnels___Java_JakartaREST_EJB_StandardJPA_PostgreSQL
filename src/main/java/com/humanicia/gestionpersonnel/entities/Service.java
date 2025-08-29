@@ -19,7 +19,7 @@ public class Service {
     @Column(length = 100)
     private String localisation;
 
-    @OneToMany(mappedBy = "service", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "service")
     @JsonbTransient
     private List<Personnel> personnels;
 

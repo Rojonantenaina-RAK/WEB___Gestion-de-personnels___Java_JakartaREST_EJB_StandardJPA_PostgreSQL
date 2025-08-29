@@ -19,7 +19,7 @@ public class Poste {
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "poste", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "poste")
     @JsonbTransient
     private List<Personnel> personnels;
 
@@ -31,4 +31,3 @@ public class Poste {
     public List<Personnel> getPersonnels() { return personnels; }
     public void setPersonnels(List<Personnel> personnels) { this.personnels = personnels; }
 }
-    

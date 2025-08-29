@@ -30,12 +30,10 @@ public class Tache {
 
     @ManyToOne
     @JoinColumn(name = "matricule")
-    @JsonbTransient
     private Personnel personnel;
 
     @ManyToOne
     @JoinColumn(name = "id_projet")
-    @JsonbTransient
     private Projet projet;
 
     // getters & setters
