@@ -1,5 +1,5 @@
 # Personnel
-### GET
+##### GET
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/personnels \
   -H "Accept: application/json"
@@ -8,7 +8,7 @@ curl -X GET http://localhost:8080/gestion-personnel/api/personnels \
 curl -X GET http://localhost:8080/gestion-personnel/api/personnels/1 \
   -H "Accept: application/json"
 ```
-### POST
+##### POST
 ```
 curl -X POST http://localhost:8080/gestion-personnel/api/personnels \
   -H "Content-Type: application/json" \
@@ -24,7 +24,7 @@ curl -X POST http://localhost:8080/gestion-personnel/api/personnels \
     "idPoste": 2
   }'
 ```
-### PUT
+##### PUT
 ```
 curl -X PUT http://localhost:8080/gestion-personnel/api/personnels/1 \
   -H "Content-Type: application/json" \
@@ -41,14 +41,14 @@ curl -X PUT http://localhost:8080/gestion-personnel/api/personnels/1 \
     "poste": { "idPoste": 1 }
   }'
 ```
-### DELETE
+##### DELETE
 ```
 curl -X DELETE http://localhost:8080/gestion-personnel/api/personnels/1
 ```
 
 
 # Contrat
-### GET
+##### GET
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/services \
   -H "Accept: application/json"
@@ -57,7 +57,7 @@ curl -X GET http://localhost:8080/gestion-personnel/api/services \
 curl -X GET http://localhost:8080/gestion-personnel/api/services/1 \
   -H "Accept: application/json"
 ```
-### POST
+##### POST
 ```
 curl -X POST http://localhost:8080/gestion-personnel/api/services \
   -H "Content-Type: application/json" \
@@ -66,7 +66,7 @@ curl -X POST http://localhost:8080/gestion-personnel/api/services \
     "localisation": "Antananarivo"
   }'
 ```
-### PUT
+##### PUT
 ```
 curl -X PUT http://localhost:8080/gestion-personnel/api/services/1 \
   -H "Content-Type: application/json" \
@@ -75,14 +75,14 @@ curl -X PUT http://localhost:8080/gestion-personnel/api/services/1 \
     "localisation": "Mahajanga"
   }'
 ```
-### DELETE
+##### DELETE
 ```
 curl -X DELETE http://localhost:8080/gestion-personnel/api/services/1
 ```
 
 
 # Poste
-### GET
+##### GET
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/postes \
   -H "Accept: application/json"
@@ -91,7 +91,7 @@ curl -X GET http://localhost:8080/gestion-personnel/api/postes \
 curl -X GET http://localhost:8080/gestion-personnel/api/postes/1 \
   -H "Accept: application/json"
 ```
-### POST
+##### POST
 ```
 curl -X POST http://localhost:8080/gestion-personnel/api/postes \
   -H "Content-Type: application/json" \
@@ -100,7 +100,7 @@ curl -X POST http://localhost:8080/gestion-personnel/api/postes \
     "description": "Responsable du développement des APIs et de la logique métier."
   }'
 ```
-### PUT
+##### PUT
 ```
 curl -X PUT http://localhost:8080/gestion-personnel/api/postes/1 \
   -H "Content-Type: application/json" \
@@ -109,13 +109,13 @@ curl -X PUT http://localhost:8080/gestion-personnel/api/postes/1 \
     "description": "Développement frontend et backend, maintenance et optimisation."
   }'
 ```
-### DELETE
+##### DELETE
 ```
 curl -X DELETE http://localhost:8080/gestion-personnel/api/postes/1
 ```
 
 # Service
-### GET
+##### GET
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/services \
   -H "Accept: application/json"
@@ -124,7 +124,7 @@ curl -X GET http://localhost:8080/gestion-personnel/api/services \
 curl -X GET http://localhost:8080/gestion-personnel/api/services/1 \
   -H "Accept: application/json"
 ```
-### POST
+##### POST
 ```
 curl -X POST http://localhost:8080/gestion-personnel/api/services \
   -H "Content-Type: application/json" \
@@ -133,7 +133,7 @@ curl -X POST http://localhost:8080/gestion-personnel/api/services \
     "localisation": "Bureau 3ème étage"
   }'
 ```
-### PUT
+##### PUT
 ```
 curl -X PUT http://localhost:8080/gestion-personnel/api/services/1 \
   -H "Content-Type: application/json" \
@@ -142,21 +142,21 @@ curl -X PUT http://localhost:8080/gestion-personnel/api/services/1 \
     "localisation": "Bâtiment A"
   }'
 ```
-### DELETE
+##### DELETE
 ```
 curl -X DELETE http://localhost:8080/gestion-personnel/api/services/1
 ```
 
 
 # Presence
-### GET
+##### GET
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/presences
 ```
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/presences/1
 ```
-### POST
+##### POST
 ```
 curl -X POST http://localhost:8080/gestion-personnel/api/presences \
   -H "Content-Type: application/json" \
@@ -168,7 +168,7 @@ curl -X POST http://localhost:8080/gestion-personnel/api/presences \
     "matricule": 1
   }'
 ```
-### PUT
+##### PUT
 ```
 curl -X PUT http://localhost:8080/gestion-personnel/api/presences/1 \
   -H "Content-Type: application/json" \
@@ -181,21 +181,21 @@ curl -X PUT http://localhost:8080/gestion-personnel/api/presences/1 \
     "personnel": { "matricule": 1 }
   }'
 ```
-### DELETE
+##### DELETE
 ```
 curl -X DELETE http://localhost:8080/gestion-personnel/api/presences/1
 ```
 
 
 # Projet
-### GET
+##### GET
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/projets
 ```
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/projets/1
 ```
-### POST
+##### POST
 ```
 curl -X POST http://localhost:8080/gestion-personnel/api/projets \
   -H "Content-Type: application/json" \
@@ -206,7 +206,7 @@ curl -X POST http://localhost:8080/gestion-personnel/api/projets \
     "dateFin": "2024-03-31"
   }'
 ```
-### PUT
+##### PUT
 ```
 curl -X PUT http://localhost:8080/gestion-personnel/api/projets/1 \
   -H "Content-Type: application/json" \
@@ -217,21 +217,21 @@ curl -X PUT http://localhost:8080/gestion-personnel/api/projets/1 \
     "dateFin": "2024-06-30"
   }'
 ```
-### DELETE
+##### DELETE
 ```
 curl -X DELETE http://localhost:8080/gestion-personnel/api/projets/1
 ```
 
 
 # Tache
-### GET
+##### GET
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/taches
 ```
 ```
 curl -X GET http://localhost:8080/gestion-personnel/api/taches/1
 ```
-### POST
+##### POST
 ```
 curl -X POST http://localhost:8080/gestion-personnel/api/taches \
   -H "Content-Type: application/json" \
@@ -245,7 +245,7 @@ curl -X POST http://localhost:8080/gestion-personnel/api/taches \
     "idProjet": 1
   }'
 ```
-### PUT
+##### PUT
 ```
 curl -X PUT http://localhost:8080/gestion-personnel/api/taches/1 \
   -H "Content-Type: application/json" \
@@ -260,7 +260,7 @@ curl -X PUT http://localhost:8080/gestion-personnel/api/taches/1 \
     "projet": { "idProjet": 1 }
   }'
 ```
-### DELETE
+##### DELETE
 ```
 curl -X DELETE http://localhost:8080/gestion-personnel/api/taches/1
 ```
